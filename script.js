@@ -69,3 +69,18 @@ function createCard(info){
     return card
 
 }
+
+// Socials listener
+
+const socials = document.querySelectorAll(".fa")
+
+socials.forEach(element=>{
+    element.addEventListener('click',()=>{
+        
+        if (element.classList.contains("fa-twitter")){
+            window.open("https://twitter.com/timberners_lee","_blank")
+        }
+        
+
+    })
+})
